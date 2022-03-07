@@ -1,0 +1,26 @@
+<div metal:use-macro="template/nav/macros/navbar"> navbar </div> 
+
+<main>
+
+    <div class="container text-light justify-content-center">
+    <h1>Editar Heroi</h1>
+  <form action="manage_editAction" method="POST">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" name="nome" value="">
+    </div>
+    <div class="mb-3">
+      <label for="idade" class="form-label">Idade</label>
+      <input type="text" class="form-control" name="idade" value="">
+    </div>
+    <div class="mb-3">
+      <label for="poder" class="form-label">Poder</label>
+      <textarea name="poder:text" cols="40" rows="8" wrap="virtual"></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning">Editar</button>
+  </form>
+</div>
+
+  </main>
+
+<div metal:use-macro="template/foot/macros/footer"> footer </div>

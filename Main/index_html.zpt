@@ -1,0 +1,20 @@
+<div metal:use-macro="template/nav/macros/navbar"> navbar </div> 
+
+<main>
+
+    <div class="container col-md-8 text-center justify-content-center">
+        <div class="p-5 bg-light border rounded-3">
+          <h2><b>Nome:</b></h2>
+          <h2><span tal:content="context/nome" name="nome">Nome</span></h2>
+          <hr>
+          <h2><b>Idade:</b></h2>
+          <h2><span tal:content="context/idade" name="idade">Idade</span></h2>
+          <hr>
+          <h2><b>Poder:</b></h2>
+          <p tal:content="context/poder" name="poder">Poder</p>
+        </div>
+      </div>
+
+  </main>
+
+<div metal:use-macro="template/foot/macros/footer"> footer </div>
